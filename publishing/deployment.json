@@ -1,0 +1,24 @@
+{
+  "provider": "GitHub Pages",
+  "repository": "https://github.com/ramnanib2/focus-tube-privacy",
+  "branch": "main",
+  "source_path": "/",
+  "privacy_policy_url": "https://ramnanib2.github.io/focus-tube-privacy/privacy.html",
+  "site_url": "https://ramnanib2.github.io/focus-tube-privacy/",
+  "https_enforced": true,
+  "verification_status": "verified",
+  "verified_on": "2026-11-05",
+  "policy_sha256": "9ed57ac3aa405bae21ed0c12c2f4935466545276a3cf05598685f27dc1f3111f",
+  "checks": [
+    {
+      "url": "https://ramnanib2.github.io/focus-tube-privacy/privacy.html",
+      "http_status": 200,
+      "matches_prepared_policy": true
+    },
+    {
+      "url": "https://ramnanib2.github.io/focus-tube-privacy/",
+      "http_status": 200,
+      "matches_prepared_policy": true
+    }
+  ]
+}

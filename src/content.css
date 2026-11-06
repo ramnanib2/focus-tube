@@ -1,0 +1,18 @@
+/* Hidden until verified, including cards inserted before JavaScript sees them. */
+#channel-focus-home[hidden] { display: none !important; }
+/* YouTube keeps the Home filter wrapper fixed below its masthead. Hiding just
+   the chip component leaves that opaque wrapper covering our title and button. */
+html:not([data-cf-mode="standard"]) ytd-browse[page-subtype="home"] :is(ytd-rich-grid-renderer > #header, ytd-rich-grid-renderer #chips-wrapper) { display: none !important; }
+html:not([data-cf-mode="standard"]) :is(ytd-rich-item-renderer, ytd-video-renderer, ytd-grid-video-renderer, ytd-compact-video-renderer, ytd-playlist-video-renderer, ytd-playlist-panel-video-renderer, yt-lockup-view-model, .yt-lockup-view-model, ytm-shorts-lockup-view-model, yt-shorts-lockup-view-model):not([data-cf-allowed="true"]) { display: none !important; }
+/* A verified profile channel keeps its own tabs, curated playlists and posts.
+   Individual video cards and watch links still verify the actual uploader. */
+html:not([data-cf-mode="standard"]):not([data-cf-approved-channel="true"]) :is(ytd-radio-renderer, ytd-compact-radio-renderer, ytd-playlist-renderer, ytd-grid-playlist-renderer, ytd-compact-playlist-renderer, ytd-channel-renderer, ytd-post-renderer, ytd-backstage-post-renderer, ytd-backstage-post-thread-renderer, ytd-rich-section-renderer) { display: none !important; }
+html:not([data-cf-mode="standard"]) :is(ytd-ad-slot-renderer, ytd-promoted-sparkles-web-renderer, ytd-in-feed-ad-layout-renderer) { display: none !important; }
+html:not([data-cf-mode="standard"]) :is(.ytp-ce-element, .ytp-endscreen-content, .ytp-pause-overlay, #mouseover-overlay) { display: none !important; }
+html:not([data-cf-mode="standard"]):not([data-cf-approved-channel="true"]) :is(ytd-watch-next-secondary-results-renderer #chips, ytd-feed-filter-chip-bar-renderer) { display: none !important; }
+html:not([data-cf-mode="standard"]):not([data-cf-shorts="show"]):not([data-cf-approved-channel="true"]) :is(ytd-reel-shelf-renderer, ytd-reel-item-renderer, ytm-shorts-lockup-view-model, yt-shorts-lockup-view-model, ytd-rich-shelf-renderer[is-shorts], ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]), ytd-guide-entry-renderer:has(a[href^="/shorts"])) { display: none !important; }
+html:not([data-cf-mode="standard"]):not([data-cf-watch="allowed"]) ytd-watch-flexy :is(#player, #player-full-bleed-container) { visibility: hidden !important; }
+html:not([data-cf-mode="standard"]) :is(ytd-reel-video-renderer, ytd-shorts) { visibility: hidden !important; }
+/* Disable thumbnail playback without changing the user's stored YouTube preference. */
+html:not([data-cf-mode="standard"]) ytd-video-preview { display: none !important; }
+html:not([data-cf-mode="standard"]) .ytp-autonav-toggle-button-container { display: none !important; }

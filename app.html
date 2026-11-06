@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Focus Tube · Profiles</title><link rel="icon" type="image/png" href="assets/icons/icon-32.png"><link rel="stylesheet" href="src/ui.css"><script src="src/core.js" defer></script><script src="src/ui.js" defer></script><script src="src/app.js" defer></script></head>
+<body class="manager-page">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="app.html"><img class="brand-mark" src="assets/branding/focus-tube.svg" alt="" width="38" height="38"><span>Focus Tube<small>YOUR YOUTUBE, WITH INTENTION</small></span></a>
+      <div class="sidebar-heading"><span>FOCUS PROFILES</span><span id="profile-count">1</span></div>
+      <nav id="profile-list" aria-label="Focus profiles"></nav>
+      <button id="new-profile" class="new-profile" type="button"><span aria-hidden="true">＋</span> New profile</button>
+      <div class="sidebar-bottom"><span class="local-note">Stored on this browser only</span><a class="privacy-link" href="privacy.html" target="_blank" rel="noreferrer">Privacy policy</a></div>
+    </aside>
+    <main>
+      <header class="topbar"><span class="breadcrumb">Your space / <span id="breadcrumb-profile">Learning</span></span></header>
+      <div class="main-content">
+        <div id="break-banner" class="break-banner" hidden><div><strong>Standard YouTube is open</strong><p id="break-remaining"></p></div><button id="return-focus" class="button primary" type="button">Return to Focus</button></div>
+        <div class="page-heading"><div><div class="eyebrow">FOCUS PROFILE</div><h1 id="profile-name">Learning</h1><p>Only these channels. A feed you chose.</p></div><div class="heading-actions"><button id="rename-profile" class="button secondary" type="button">Rename</button><button id="duplicate-profile" class="button secondary" type="button">Duplicate</button><button id="delete-profile" class="text-button danger" type="button">Delete</button></div></div>
+        <section class="add-panel" aria-labelledby="add-title"><div><h2 id="add-title">Add channels</h2><p>Enter a channel or select from your subscriptions below.</p></div><form id="add-channel-form"><label for="channel-input">Channel name, @handle, or URL</label><div class="input-row"><input id="channel-input" name="channel" placeholder="e.g. Veritasium, @3blue1brown, or a channel URL" required autocomplete="off" maxlength="500"><button id="add-channel" class="button primary" type="submit">Add channel <span aria-hidden="true">＋</span></button></div><span class="field-hint">Names open channel search results. Handles and URLs are verified directly.</span></form><section id="channel-picker" class="channel-picker" aria-labelledby="picker-title">
+          <div class="picker-header"><div><h3 id="picker-title">Your subscriptions</h3><p id="picker-profile" class="muted"></p></div><div class="picker-header-actions"><button id="picker-back" class="text-button text-link" type="button" hidden>Back to subscriptions</button><button id="picker-refresh" class="text-button" type="button">Refresh list ↻</button></div></div>
+          <div id="picker-account" class="picker-account"><p>From the YouTube account signed in to this browser.</p><div><button id="picker-open-youtube" class="text-link text-button" type="button">Open YouTube / sign in ↗</button></div></div>
+          <label for="picker-filter">Find a channel in this list</label><input id="picker-filter" type="search" placeholder="Search names or handles" autocomplete="off">
+          <div class="picker-tools"><span id="picker-count" role="status">Loading channels…</span><div><button id="picker-select-visible" class="text-button" type="button">Select shown</button><button id="picker-clear" class="text-button" type="button">Clear selection</button></div></div>
+          <p id="picker-status" class="picker-status" role="status">Loading channels…</p><div id="picker-list" class="picker-list" role="group" aria-label="Channels to add" tabindex="0"></div>
+          <div class="picker-footer"><span id="picker-selection" class="muted">0 channels selected</span><button id="picker-add" class="button primary" type="button" disabled>Add selected channels</button></div>
+        </section></section>
+        <section aria-labelledby="channels-heading"><div class="section-heading"><h2 id="channels-heading">Your channels <span id="channel-count" class="number-pill">0</span></h2><span id="selected-count" class="muted"></span></div><div id="channels" class="channel-list"></div><div id="channel-empty" class="empty-state"><div class="empty-symbol" aria-hidden="true">＋</div><h3>Your next good rabbit hole starts here</h3><p>Add your first channel above. Focus mode stays closed<br class="desktop-break"> until you choose what belongs in this profile.</p></div></section>
+        <div class="settings-row"><div><h3>Hide Shorts in feeds</h3><p>Keep feed shelves hidden. Your approved channels’ Shorts tabs stay available.</p></div><label class="switch"><input id="hide-shorts" type="checkbox" checked><span class="switch-track" aria-hidden="true"></span><span class="sr-only">Hide Shorts in feeds</span></label></div>
+        <footer class="main-footer"><span><span class="tiny-dot"></span> Your selected profile applies to every YouTube tab.</span><a class="button secondary" href="https://www.youtube.com/" target="_blank" rel="noreferrer">Open YouTube <span aria-hidden="true">↗</span></a></footer>
+        <section class="standard-card"><div><h3>Taking a detour?</h3><p>Standard recommendations are a deliberate, temporary switch.</p></div><a href="unlock.html" class="text-link">Switch to standard mode <span aria-hidden="true">→</span></a></section>
+      </div>
+    </main>
+  </div>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <dialog id="profile-dialog"><form id="profile-form"><span class="eyebrow">MAKE IT YOURS</span><h2 id="dialog-title">New focus profile</h2><label for="profile-input">Profile name</label><input id="profile-input" maxlength="60" required placeholder="e.g. Design, Science, Building things"><p id="dialog-help" class="muted">Give this set of channels a place of its own.</p><div class="dialog-actions"><button id="dialog-cancel" class="button secondary" type="button">Cancel</button><button class="button primary" type="submit">Save profile</button></div></form></dialog>
+</body></html>

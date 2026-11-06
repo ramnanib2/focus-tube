@@ -1,0 +1,18 @@
+FOCUS TUBE — REVIEWER TEST INSTRUCTIONS (1.4.2)
+
+No payment, developer account, or proprietary credentials are required. Core channel filtering works with public YouTube channels. The optional subscription picker requires a YouTube account signed in to the same browser, using the reviewer’s own subscriptions. No personal credentials are supplied or needed from the developer.
+
+1. Install the uploaded extension. Open/reload https://www.youtube.com/ so the content script is connected.
+2. Open the extension popup and choose Manage profiles & channels. The initial Learning profile has no channels, so Focus mode intentionally shows no unverified video recommendations.
+3. Enter @3blue1brown in the channel field and click Add channel. Public channel metadata should resolve to 3Blue1Brown. Add @veritasium as another example. Metadata requests depend on YouTube availability and regional consent; an actionable error is shown if verification fails.
+4. Return to YouTube Home. The extension shows shortcuts for the enabled channels and filters supported recommendations to their verified uploads. YouTube may not supply matching recommendations; use a channel shortcut to browse its uploads.
+5. Open an approved channel and its Videos, Playlists, Shorts, Posts, and other available tabs. Those native tabs remain accessible. Opening an individual video still verifies its uploader. An approved Short opens in the regular watch player.
+6. Create a second profile named Coding. Add @Fireship, then switch profiles. Only the active profile’s enabled uploaders should pass the filter. Toggling a saved channel updates supported open YouTube tabs.
+7. If signed in to YouTube with subscriptions, return to the manager, use Refresh list, filter the inline subscription list, check multiple channels, and Add selected channels. Channels already enabled are marked. This does not subscribe or unsubscribe on YouTube.
+8. Choose Switch to standard mode. Type the fresh passage (2–3 sentences, 10–15 words). Partial text cannot unlock; paste/drop is blocked; case and repeated spaces are ignored. Choose a break duration and open standard mode.
+9. Standard mode restores the normal supported YouTube interface. Return to Focus from the popup/toolbar/manager to immediately restore filtering. Profile switches and browser restarts also return to Focus.
+10. Open Privacy policy from the manager or popup. It describes local profiles, subscription handling, direct Google requests, retention, and Limited Use.
+
+Permissions: storage for profiles/temporary state; alarms for break expiry; YouTube-only host access for filtering and metadata. All executable code is packaged; remote YouTube content is parsed as data, never evaluated. No analytics, developer backend, or broad history/cookies permissions.
+
+Limitations: desktop YouTube only; native layout/metadata changes may require updates; private/restricted videos may not verify; this is channel-based filtering, not topic classification, feed synthesis, a security boundary, or an in-stream ad blocker.

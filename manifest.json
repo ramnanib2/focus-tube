@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Tube",
+  "version": "1.4.2",
+  "description": "Focus profiles for YouTube: only your chosen channels, with a short 2–3 sentence switch to standard mode.",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Focus Tube",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "24": "assets/icons/icon-24.png",
+      "32": "assets/icons/icon-32.png"
+    }
+  },
+  "options_ui": {
+    "page": "app.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*"
+      ],
+      "js": [
+        "src/core.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  }
+}

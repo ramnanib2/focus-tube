@@ -1,0 +1,45 @@
+NAME
+Focus Tube
+
+SHORT DESCRIPTION
+Choose your YouTube channels, organize focus profiles, and keep distracting recommendations out of your feed.
+
+LANGUAGE
+English (United States)
+
+CATEGORY
+Choose the current productivity/focus category offered by the Developer Dashboard.
+
+PRIVACY POLICY URL
+https://ramnanib2.github.io/focus-tube-privacy/privacy.html
+
+DETAILED DESCRIPTION
+Make YouTube a place for the channels you chose.
+
+Focus Tube filters supported YouTube pages to videos uploaded by the enabled channels in your active focus profile. Build separate profiles for learning, coding, work, or another interest, then switch between them as your plans change.
+
+CHOOSE YOUR CHANNELS
+• Add a channel by name, @handle, or YouTube channel URL.
+• Search a scrollable subscriptions list and add several channels at once.
+• Enable or disable channels independently in each profile.
+• Open your enabled channels from thumbnail shortcuts on YouTube Home.
+
+KEEP APPROVED CHANNELS AVAILABLE
+Approved channel pages retain their native Videos, Playlists, Shorts, Posts, Live, and other available tabs. Individual videos are still checked against the selected uploaders. Approved Shorts open in the regular video player, while the unchecked endless Shorts feed stays blocked in Focus mode.
+
+SWITCH WITH INTENTION
+Need ordinary YouTube? Type a fresh passage of just 2–3 short sentences, then choose a 15-, 30-, or 60-minute break. Return to Focus at any time. Focus also returns when the break ends, you switch profiles, or the browser restarts.
+
+SIMPLE AND LOCAL
+Use a neutral interface that follows light and dark mode. Profiles and settings stay in your browser. There is no Focus Tube account, developer-operated backend, or analytics. Subscription selection uses the YouTube account signed in to an existing tab in the same browser. Channel searches and verification requests go directly to YouTube, and avatars load from YouTube image services.
+
+BEFORE YOU START
+• This extension works on desktop YouTube, not the YouTube mobile app.
+• It filters the recommendations YouTube supplies; it does not create new recommendations or change YouTube’s algorithm. Some feeds may have few or no matching videos.
+• Unverified or unapproved videos stay hidden or blocked. Private, age-restricted, or otherwise unavailable metadata can prevent verification.
+• The typing passage provides a deliberate pause. It does not prevent disabling the extension.
+• Sign-in is needed only for the subscription picker; direct channel entry works without a Focus Tube account.
+
+Screenshots show example profiles and channel selections, not private user account data.
+
+Focus Tube is independently developed and is not affiliated with or endorsed by YouTube or Google. YouTube is a trademark of Google LLC.
